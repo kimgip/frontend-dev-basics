@@ -34,12 +34,12 @@ input[type='text'].focused {
 </style>
 <script>
 function focused(el) {
-	el.style.borderColor="#2a00e6";
-	el.style.backgroundColor="#e1e6f6";
+	el.className="focused";
 }
 
-function blured() {
-	console.log('blur');
+function blured(el) {
+	el.className="";
+	console.log(el);
 }
 </script>
 </head>
@@ -48,7 +48,7 @@ function blured() {
 	<form>
 		<input
 			onfocus="focused(this)" 
-			onblur="blured()"
+			onblur="blured(this)"
 			type="text"
 			placeholder="이메일">
 		<input type="password" placeholder="비밀번호">
