@@ -3,6 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.onload=function(){
+	setTimeout(function(){
+		var imgElement = document.createElement('img');
+		imgElement.src = 'https://i.namu.wiki/i/jCLGnjDnwyUt3yFxdoUQm3eI1kEdOS65vQHMq7z2m4cAmCY_5f8TcOV_B9ti2H6rUs3KYXQ35TRxns2N2PQI0w.webp';
+		imgElement.style.width = "200px";
+		imgElement.alt = '해리포터';
+		imgElement.title = '해리포터';
+		
+		document.body.appendChild(imgElement);
+	}, 2000);
+}
+</script>
 </head>
 <body>
 	<h1 id='h' data-no='10'>DOM(Document Object Model)</h1>

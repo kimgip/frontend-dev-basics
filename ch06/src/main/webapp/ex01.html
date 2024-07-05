@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+<meta charset="UTF-8">
+<script type="text/javascript">
+window.n = '둘리';
+console.log(window.n, n);
+
+var email = 'dooly@gmail.com';
+console.log(window.email, email);
+
+setTimeout(function(){
+	var child = window.open('popup.html', 'popup', 'width=600, height=400');
+	
+	setTimeout(function(){
+		// 자식창 내용 바꾸기
+		child.document.write("<h1>popoup contents changed!!</h1>");
+	}, 1000);
+	
+	setTimeout(function(){
+		// 자식창 움직이기
+		child.moveTo(200, 200);
+	}, 1000);
+}, 2000);
+</script>
 </head>
 <body>
 <body>
