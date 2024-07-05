@@ -32,7 +32,7 @@
 
 2. 호스트 객체
     - 자바스크립트 엔진이 embed 되어 있는 호스트 환경에 있는 객체
-    - Browser 호스트: screen, location, navigaitor, document(DOM), XmlHttpRequest
+    - Browser 호스트: screen, location, navigator, document(DOM), XmlHttpRequest
     - Node 호스트: http, os, fs, path, process, ...
 
 3. 사용자 객체
