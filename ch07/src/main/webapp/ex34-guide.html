@@ -28,21 +28,6 @@ $(function(){
 	$('#btn-change').click(function(){
 		changeImage();
 	});
-	
-	var intervalId = null;
-	$('#btn-slideshow').click(function(){
-		if (intervalId) {
-			clearInterval(intervalId);
-			intervalId = null;
-			$(this).text('슬라이드쇼 시작');
-			return;
-		}
-		
-		intervalId = setInterval(function(){
-			changeImage();
-		}, 1000);
-		$(this).text('슬라이드쇼 중지');
-	})
 });
 </script>
 </head>
